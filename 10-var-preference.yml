@@ -20,4 +20,4 @@
 # 10-vars-preference.yml in vs code check vars reference from               play--task--file--prompt--inventory--args throgh command line    types ok							33 min
 
 # output order follow below
-# args(cmd line)--task level--from file--from prompt---
+# args(cmd line)-->task level-->from file-->from prompt-->from play level-->from inventory
