@@ -1,10 +1,10 @@
 - name: variables 
   hosts: localhost
   connection: local             # ansible connecting to localhost
-  vars:
-    COURSE: ansible
-    DURATION: 10HRS
-    Trainer: Siva kumar reddy
+  # vars:
+  #   COURSE: ansible
+  #   DURATION: 10HRS
+  #   Trainer: Siva kumar reddy
   tasks:
   - name: print the course info
     ansible.builtin.debug:
