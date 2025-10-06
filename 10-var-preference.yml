@@ -3,8 +3,8 @@
   connection: local
   vars:
     NAME: from play level
-  vars_files:
-  - courses.yml
+  # vars_files:                                               # 3rd preference
+  # - courses.yml
   vars_prompt:
   - name: NAME
     prompt: what is your NAME?
@@ -12,7 +12,7 @@
   tasks:
   - name: testing variable references
     # vars:
-    #   NAME: from task level 
+    #   NAME: from task level                                 # 2nd prefrence
     ansible.builtin.debug:
       msg: "NAME: {{ NAME }}"
 
