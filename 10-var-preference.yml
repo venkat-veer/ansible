@@ -6,13 +6,13 @@
   # vars_files:                                               # 3rd preference
   # - courses.yml
   vars_prompt:
-  - name: NAME
-    prompt: what is your NAME?
-    private: false
+  # - name: NAME                                              # 4th preference
+  #   prompt: what is your NAME?
+  #   private: false
   tasks:
   - name: testing variable references
     # vars:
-    #   NAME: from task level                                 # 2nd prefrence
+    #   NAME: from task level                                 # 2nd preference
     ansible.builtin.debug:
       msg: "NAME: {{ NAME }}"
 
@@ -20,4 +20,4 @@
 # 10-vars-preference.yml in vs code check vars reference from               play--task--file--prompt--inventory--args throgh command line    types ok							33 min
 
 # output order follow below
-# args(cmd line)--task level--
+# args(cmd line)--task level--from file--from prompt---
