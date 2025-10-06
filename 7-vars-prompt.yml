@@ -7,7 +7,7 @@
     private: false
   - name: password
     prompt: what is your password?
-    private: false
+    private: true                           # password does not print in console while u type ok    24 min
   tasks:
   - name: print credentials
     ansible.builtin.debug:
