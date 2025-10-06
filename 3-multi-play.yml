@@ -1,0 +1,20 @@
+- name: PLAY-1
+  hosts: frontend
+  tasks: 
+  - name: PLAY-1 & TASK-1
+    ansible.bultin.debug:
+      msg: "Hello from PLAY-1 & TASK-1"
+
+  - name: PLAY-1 & TASK-2
+    ansible.bultin.debug:
+      msg: "Hello from PLAY-1 & TASK-2"
+
+- name: PLAY-2
+  hosts: frontend
+  tasks:
+  - name: PLAY-2 & TASK-1
+    ansible.builtin.debug:
+      msg: "Hello from PLAY-2 & TASK-2"
+  - name: PLAY-2 & TASK -2
+    ansible.bultin.debug:
+      msg: "Hello from PLAY-2 & TASK-2"
