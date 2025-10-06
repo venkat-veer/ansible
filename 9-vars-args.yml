@@ -1,13 +1,11 @@
-- name: task level variables 
+- name: variables 
   hosts: localhost
   connection: local             # ansible connecting to localhost
   vars:
-    COURSE: DevOps with AWS
+    COURSE: ansible
     DURATION: 10HRS
     Trainer: Siva kumar reddy
   tasks:
   - name: print the course info
-    vars:
-      COURSE: ansible
     ansible.builtin.debug:
-      msg: "Course Name is {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}" 
+      msg: "Course Name is {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"

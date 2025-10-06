@@ -1,4 +1,4 @@
-- name: play level variables 
+- name: variables from inventory file
   hosts: localhost
   connection: local             # ansible connecting to localhost
   
