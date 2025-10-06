@@ -1,0 +1,12 @@
+- name: Install Packages
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      name: "{{ item }}"
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - zip
