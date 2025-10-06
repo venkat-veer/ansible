@@ -2,15 +2,15 @@
   hosts: localhost
   connection: local
   vars:
-    Course: DevOps with AWS
-    Duration: 120
-    is_live: true
+    Course: DevOps with AWS               # string
+    Duration: 120                         # integer
+    is_live: true                         # boolean
     # List
     tools: #["Linux","Shell","Ansible"]
     - "Linux"
     - "Shell"
     - "Ansible"
-    concepts:
+    concepts:                             # dictionary or map
       cloud: AWS
       cm: ansible
   tasks:
