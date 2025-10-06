@@ -1,18 +1,18 @@
 - name: vars preference
   hosts: localhost
   connection: local
-  vars:
-    NAME: from play level
-  # vars_files:                                               # 3rd preference
+  # vars:                                                     # 5th preference from
+  #   NAME: from play level
+  # vars_files:                                               # 3rd preference from course file
   # - courses.yml
   vars_prompt:
-  # - name: NAME                                              # 4th preference
+  # - name: NAME                                              # 4th preference from prompt level
   #   prompt: what is your NAME?
   #   private: false
   tasks:
   - name: testing variable references
     # vars:
-    #   NAME: from task level                                 # 2nd preference
+    #   NAME: from task level                                 # 2nd preference from task level
     ansible.builtin.debug:
       msg: "NAME: {{ NAME }}"
 
