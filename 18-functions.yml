@@ -1,8 +1,16 @@
 - name: functions
   hosts: localhost
   connection: local
+  vars:
+    technologies: DevOps,Linux,Shell,Ansible        # string
   tasks:
   - name: default variable
     ansible.builtin.debug:
     #  msg: "Hello, {{ name }}"       # u got error because u did not define name elsewhere
-       msg: "Hello, {{ name | default ('RAMESH') }}"
+       msg: "Hello, {{ name | default ('RAMESH') }}"    # it will take default ramesh value
+
+
+  # string to list
+  - name: convert string to list
+    ansible.builtin.debug:
+      msg: "Technologies are : {{ technologies | split(',') }}"
