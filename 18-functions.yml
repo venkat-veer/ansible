@@ -85,5 +85,5 @@
     register: redirect_output
 
   - name: print redirect_output shell
-    ansilbe.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{ redirect_output }}" 
