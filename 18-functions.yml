@@ -64,8 +64,8 @@
 
 
   - name: grep for root
-    # ansible.builtin.command: cat /etc/passwd | grep root            # for simple tasks
-    ansible.builtin.shell: cat /etc/passwd | grep root                # for complex tasks
+    ansible.builtin.command: cat /etc/passwd | grep root            # for simple tasks
+    # ansible.builtin.shell: cat /etc/passwd | grep root                # for complex tasks
     register: command_output 
       
   - name: print the command_output
