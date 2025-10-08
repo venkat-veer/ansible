@@ -5,7 +5,8 @@
     technologies: DevOps,Linux,Shell,Ansible        # string
     name: "SivakUmar reddy M"
     gmail: Info@GMAIL.COM
-    ipaddress: 345.4329.43209.4332
+    # ipaddress: 345.4329.43209.4332        # wrong ip address
+    ipaddress: 192.168.109.103              # correct ip address
     # dictionary == map
     tags:
       Application: payment
